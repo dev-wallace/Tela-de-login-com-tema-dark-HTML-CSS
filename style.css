@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 :root{
-    --color-primary-1: #77ffc0
+    --color-primary-1: #77ffc0;
+    --color-primary-2: #00ff88;
+
+    --color-neutral-1: #201b2c;
+    --color-neutral-2: #514869;
+    --color-neutral-3: #f0ffffde;
+    --color-neutral-4: #f0ffff94;
+    --color-neutral-5: #400988;
+   
 }
 * {
     margin: 0;
@@ -15,7 +23,7 @@ body{
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-color: #201b2c;
+    background-color: var(--color-neutral-1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,12 +35,83 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;/*itens um abaixo do outro*/
 }
 .left-login > h1{
     color: var(--color-primary-1);
 }
 
 .right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   padding: 30px 35px; /*padding no card e referente ao tamnho no card o primeiro para o eixo y e o sehundo paa o x*/
+   background: #2f2841;
+   border-radius: 20px;
+   box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1{
+    color: var(--color-primary-2);
+    font-weight: 800;
+    margin: 0;
+    
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 8px 0px;
+    width: 100%;
+
+
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--color-neutral-2);
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    
+
+
+}
+.textfield > label{
+    color: var(--color-neutral-3);
+    margin-bottom: 8px ;
+
+}
+
+.textfield >input::placeholder{
+    color: var(--color-neutral-4);
+}
+.btn-login{
+    width: 50%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 20px ;
+    outline: none;
+    font-weight: 1000;
+    color: #008d4ba2;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px #2d9c6e6e;
+    text-transform: uppercase;
+  
 }
